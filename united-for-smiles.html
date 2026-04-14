@@ -1081,67 +1081,40 @@
         <!-- Form -->
         <div>
           <form action="https://formspree.io/f/mojyvlkk" method="POST" class="form-box">
+            <h2>Send a Message</h2>
 
-  <h2>Send a Message</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" name="name" required />
+              </div>
 
-  <div class="form-row">
-    <div class="form-group">
-      <label>Your Name *</label>
-      <input type="text" name="name" required />
-    </div>
-
-    <div class="form-group">
-      <label>Email *</label>
-      <input type="email" name="email" required />
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label>Subject</label>
-    <input type="text" name="subject" />
-  </div>
-
-  <div class="form-group">
-    <label>Message *</label>
-    <textarea name="message" required></textarea>
-  </div>
-
-  <button type="submit" class="btn-form small-btn">
-    Send Message
-  </button>
-
-</form>
               <div class="form-group">
                 <label>Email *</label>
-                <input type="email" id="cEmail" placeholder="jane@example.com" />
+                <input type="email" name="email" required />
               </div>
             </div>
+
             <div class="form-group">
               <label>Subject</label>
-              <input type="text" id="cSubject" placeholder="How can we help?" />
+              <input type="text" name="subject" />
             </div>
+
             <div class="form-group">
               <label>Message *</label>
-              <textarea id="cMessage" placeholder="Tell us more..."></textarea>
+              <textarea name="message" required></textarea>
             </div>
-            <button class="btn-form" onclick="handleContact()">
+
+            <button type="submit" class="btn-form small-btn">
               Send Message
-              <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
             </button>
-          </div>
-          <div id="contactSuccess" style="display:none" class="success-page" style="min-height:auto;padding:40px">
-            <div class="success-card" style="margin:0">
-              <div class="success-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14l-4-4 1.41-1.41L10 13.17l6.59-6.59L18 8l-8 8z"/></svg>
-              </div>
-              <h2>Message Sent!</h2>
-              <p>Thanks for reaching out. We'll get back to you soon.</p>
-            </div>
-          </div>
+          </form>
         </div>
+
         <!-- Info -->
         <div class="contact-info">
           <h2>Contact Information</h2>
+
           <div class="contact-item">
             <div class="contact-icon pink-bg">
               <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -1151,25 +1124,28 @@
               <a href="mailto:mtkach09@gmail.com">mtkach09@gmail.com</a>
             </div>
           </div>
+
           <div class="contact-item">
             <div class="contact-icon blue-bg">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
             </div>
             <div>
               <h3>Location</h3>
-              <p>Based in Florida<br/>Serving communities across the state</p>
+              <p>Based in Florida<br />Serving communities across the state</p>
             </div>
           </div>
+
           <div class="social-card">
             <h3>Follow Our Journey</h3>
             <p>Stay connected as we grow and share updates on our progress.</p>
             <div class="social-links">
-              <a href="https://www.instagram.com/united.for.smiles" target="_blank" class="social-link">
-                <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+              <a class="social-link" href="https://www.instagram.com/united.for.smiles" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.88 1.12a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5z"/></svg>
               </a>
             </div>
           </div>
-          <div class="note-box" style="margin-top:24px">
+
+          <div class="note-box">
             <h3>A Note About Our Status</h3>
             <p>United for Smiles is a youth-led initiative currently in its early stages. We are not yet a registered nonprofit organization. All donations go directly to purchasing supplies for dental hygiene kits.</p>
           </div>
